@@ -1,0 +1,14 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"> </script>
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs='trackingMethod: best;'>
+       <a-assets> <a-asset-item id="model" src="./assets/models/1.gltf"></a-asset-item> </a-assets> 
+       <a-entity gltf-model="#model" rotation="-90 0 0"></a-entity>
+
+      <a-marker-camera preset='hiro'></a-marker-camera>
+      <a-camera-static/>
+    </a-scene>
+</body>
+</html>
